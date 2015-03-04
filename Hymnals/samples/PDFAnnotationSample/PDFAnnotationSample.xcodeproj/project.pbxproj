@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* PDFAnnotationSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PDFAnnotationSampleAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* PDFAnnotationSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* PDFAnnotationSampleViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* PDFAnnotationSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PDFAnnotationSampleViewController.m */; };
+		AD06CED615AF7399000BCCAD /* AP_typewriterEdit_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = AD06CED415AF7399000BCCAD /* AP_typewriterEdit_toolbar.png */; };
+		AD06CED715AF7399000BCCAD /* AP_typewriterEdit_toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD06CED515AF7399000BCCAD /* AP_typewriterEdit_toolbar@2x.png */; };
+		AD18747613C3AC09002C3209 /* AjiPDFLib.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD18742B13C3AC09002C3209 /* AjiPDFLib.strings */; };
+		AD18747713C3AC09002C3209 /* AP_action_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18742C13C3AC09002C3209 /* AP_action_popupEditor.png */; };
+		AD18747813C3AC09002C3209 /* AP_alphaMax.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18742D13C3AC09002C3209 /* AP_alphaMax.png */; };
+		AD18747913C3AC09002C3209 /* AP_alphaMin.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18742E13C3AC09002C3209 /* AP_alphaMin.png */; };
+		AD18747A13C3AC09002C3209 /* AP_annotationDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18742F13C3AC09002C3209 /* AP_annotationDelete.png */; };
+		AD18747B13C3AC09002C3209 /* AP_annotationEdit.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743013C3AC09002C3209 /* AP_annotationEdit.png */; };
+		AD18747C13C3AC09002C3209 /* AP_annotationHide.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743113C3AC09002C3209 /* AP_annotationHide.png */; };
+		AD18747D13C3AC09002C3209 /* AP_background_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743213C3AC09002C3209 /* AP_background_popupEditor.png */; };
+		AD18747E13C3AC09002C3209 /* AP_bar_select.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743313C3AC09002C3209 /* AP_bar_select.png */; };
+		AD18747F13C3AC09002C3209 /* AP_bookmark_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743413C3AC09002C3209 /* AP_bookmark_navIcon.png */; };
+		AD18748013C3AC09002C3209 /* AP_bookmarkAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743513C3AC09002C3209 /* AP_bookmarkAnnotation.png */; };
+		AD18748113C3AC09002C3209 /* AP_brightnessBarSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743613C3AC09002C3209 /* AP_brightnessBarSelect.png */; };
+		AD18748213C3AC09002C3209 /* AP_buttonBg_black.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743713C3AC09002C3209 /* AP_buttonBg_black.png */; };
+		AD18748313C3AC09002C3209 /* AP_buttonBg.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743813C3AC09002C3209 /* AP_buttonBg.png */; };
+		AD18748413C3AC09002C3209 /* AP_chooseColor_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743913C3AC09002C3209 /* AP_chooseColor_popupEditor.png */; };
+		AD18748513C3AC09002C3209 /* AP_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743A13C3AC09002C3209 /* AP_colormap.png */; };
+		AD18748613C3AC09002C3209 /* AP_cornerDragger.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743B13C3AC09002C3209 /* AP_cornerDragger.png */; };
+		AD18748713C3AC09002C3209 /* AP_createStamp_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743C13C3AC09002C3209 /* AP_createStamp_popupEditor.png */; };
+		AD18748813C3AC09002C3209 /* AP_crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743D13C3AC09002C3209 /* AP_crosshair.png */; };
+		AD18748913C3AC09002C3209 /* AP_delete_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743E13C3AC09002C3209 /* AP_delete_popupEditor.png */; };
+		AD18748A13C3AC09002C3209 /* AP_drawingFailed.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18743F13C3AC09002C3209 /* AP_drawingFailed.png */; };
+		AD18748B13C3AC09002C3209 /* AP_drawingMode.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744013C3AC09002C3209 /* AP_drawingMode.png */; };
+		AD18748C13C3AC09002C3209 /* AP_drawingPending.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744113C3AC09002C3209 /* AP_drawingPending.png */; };
+		AD18748D13C3AC09002C3209 /* AP_edit_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744213C3AC09002C3209 /* AP_edit_popupEditor.png */; };
+		AD18748E13C3AC09002C3209 /* AP_eraseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744313C3AC09002C3209 /* AP_eraseMode.png */; };
+		AD18748F13C3AC09002C3209 /* AP_fileAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744413C3AC09002C3209 /* AP_fileAnnotation.png */; };
+		AD18749013C3AC09002C3209 /* AP_finger_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744513C3AC09002C3209 /* AP_finger_navIcon.png */; };
+		AD18749113C3AC09002C3209 /* AP_font_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744613C3AC09002C3209 /* AP_font_popupEditor.png */; };
+		AD18749213C3AC09002C3209 /* AP_fontMax.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744713C3AC09002C3209 /* AP_fontMax.png */; };
+		AD18749313C3AC09002C3209 /* AP_fontMin.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744813C3AC09002C3209 /* AP_fontMin.png */; };
+		AD18749413C3AC09002C3209 /* AP_fullScreenImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744913C3AC09002C3209 /* AP_fullScreenImage.png */; };
+		AD18749513C3AC09002C3209 /* AP_goToPage.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744A13C3AC09002C3209 /* AP_goToPage.png */; };
+		AD18749613C3AC09002C3209 /* AP_handlebarBar.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744B13C3AC09002C3209 /* AP_handlebarBar.png */; };
+		AD18749713C3AC09002C3209 /* AP_handlebarNub.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744C13C3AC09002C3209 /* AP_handlebarNub.png */; };
+		AD18749813C3AC09002C3209 /* AP_helpacc.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744D13C3AC09002C3209 /* AP_helpacc.png */; };
+		AD18749913C3AC09002C3209 /* AP_hide_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744E13C3AC09002C3209 /* AP_hide_popupEditor.png */; };
+		AD18749A13C3AC09002C3209 /* AP_Highlight_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18744F13C3AC09002C3209 /* AP_Highlight_navIcon.png */; };
+		AD18749B13C3AC09002C3209 /* AP_highlightAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745013C3AC09002C3209 /* AP_highlightAnnotation.png */; };
+		AD18749C13C3AC09002C3209 /* AP_horizontalDragger.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745113C3AC09002C3209 /* AP_horizontalDragger.png */; };
+		AD18749D13C3AC09002C3209 /* AP_imageAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745213C3AC09002C3209 /* AP_imageAnnotation.png */; };
+		AD18749E13C3AC09002C3209 /* AP_maximumTrack_colorPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745313C3AC09002C3209 /* AP_maximumTrack_colorPicker.png */; };
+		AD18749F13C3AC09002C3209 /* AP_minimumTrack_colorPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745413C3AC09002C3209 /* AP_minimumTrack_colorPicker.png */; };
+		AD1874A013C3AC09002C3209 /* AP_navOutline_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745513C3AC09002C3209 /* AP_navOutline_navIcon.png */; };
+		AD1874A113C3AC09002C3209 /* AP_nextSearchMatch.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745613C3AC09002C3209 /* AP_nextSearchMatch.png */; };
+		AD1874A213C3AC09002C3209 /* AP_note_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745713C3AC09002C3209 /* AP_note_navIcon.png */; };
+		AD1874A313C3AC09002C3209 /* AP_noteAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745813C3AC09002C3209 /* AP_noteAnnotation.png */; };
+		AD1874A413C3AC09002C3209 /* AP_pageNumberBg.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745913C3AC09002C3209 /* AP_pageNumberBg.png */; };
+		AD1874A513C3AC09002C3209 /* AP_prevSearchMatch.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745A13C3AC09002C3209 /* AP_prevSearchMatch.png */; };
+		AD1874A613C3AC09002C3209 /* AP_redo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745B13C3AC09002C3209 /* AP_redo.png */; };
+		AD1874A713C3AC09002C3209 /* AP_resizer.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745C13C3AC09002C3209 /* AP_resizer.png */; };
+		AD1874A813C3AC09002C3209 /* AP_restart.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745D13C3AC09002C3209 /* AP_restart.png */; };
+		AD1874A913C3AC09002C3209 /* AP_scrub.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745E13C3AC09002C3209 /* AP_scrub.png */; };
+		AD1874AA13C3AC09002C3209 /* AP_searchHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18745F13C3AC09002C3209 /* AP_searchHighlight.png */; };
+		AD1874AB13C3AC09002C3209 /* AP_smallImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746013C3AC09002C3209 /* AP_smallImage.png */; };
+		AD1874AC13C3AC09002C3209 /* AP_sound_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746113C3AC09002C3209 /* AP_sound_pause.png */; };
+		AD1874AD13C3AC09002C3209 /* AP_sound_play.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746213C3AC09002C3209 /* AP_sound_play.png */; };
+		AD1874AE13C3AC09002C3209 /* AP_sound_record.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746313C3AC09002C3209 /* AP_sound_record.png */; };
+		AD1874AF13C3AC09002C3209 /* AP_soundAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746413C3AC09002C3209 /* AP_soundAnnotation.png */; };
+		AD1874B013C3AC09002C3209 /* AP_soundStatus_preparing.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746513C3AC09002C3209 /* AP_soundStatus_preparing.png */; };
+		AD1874B113C3AC09002C3209 /* AP_soundStatus_recording.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746613C3AC09002C3209 /* AP_soundStatus_recording.png */; };
+		AD1874B213C3AC09002C3209 /* AP_stamp_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746713C3AC09002C3209 /* AP_stamp_popupEditor.png */; };
+		AD1874B313C3AC09002C3209 /* AP_sticky_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746813C3AC09002C3209 /* AP_sticky_popupEditor.png */; };
+		AD1874B413C3AC09002C3209 /* AP_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746913C3AC09002C3209 /* AP_stop.png */; };
+		AD1874B513C3AC09002C3209 /* AP_Strikeout_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746A13C3AC09002C3209 /* AP_Strikeout_navIcon.png */; };
+		AD1874B613C3AC09002C3209 /* AP_strikeoutAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746B13C3AC09002C3209 /* AP_strikeoutAnnotation.png */; };
+		AD1874B713C3AC09002C3209 /* AP_thicknessMax.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746C13C3AC09002C3209 /* AP_thicknessMax.png */; };
+		AD1874B813C3AC09002C3209 /* AP_thicknessMin.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746D13C3AC09002C3209 /* AP_thicknessMin.png */; };
+		AD1874B913C3AC09002C3209 /* AP_thumb_colorPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746E13C3AC09002C3209 /* AP_thumb_colorPicker.png */; };
+		AD1874BA13C3AC09002C3209 /* AP_transform_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18746F13C3AC09002C3209 /* AP_transform_popupEditor.png */; };
+		AD1874BB13C3AC09002C3209 /* AP_typewriter_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18747013C3AC09002C3209 /* AP_typewriter_navIcon.png */; };
+		AD1874BC13C3AC09002C3209 /* AP_Underline_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18747113C3AC09002C3209 /* AP_Underline_navIcon.png */; };
+		AD1874BD13C3AC09002C3209 /* AP_underlineAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18747213C3AC09002C3209 /* AP_underlineAnnotation.png */; };
+		AD1874BE13C3AC09002C3209 /* AP_undo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18747313C3AC09002C3209 /* AP_undo.png */; };
+		AD1874BF13C3AC09002C3209 /* AP_unstick_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18747413C3AC09002C3209 /* AP_unstick_popupEditor.png */; };
+		AD1874C013C3AC09002C3209 /* AP_verticalDragger.png in Resources */ = {isa = PBXBuildFile; fileRef = AD18747513C3AC09002C3209 /* AP_verticalDragger.png */; };
+		AD1D45F212D5310000A02BF5 /* libAjiPDFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1D45F112D5310000A02BF5 /* libAjiPDFLib.a */; };
+		AD291B8512A6023100D91ACB /* SimpleFontInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD291B8412A6023100D91ACB /* SimpleFontInfo.txt */; };
+		AD3B7A82122308C400BDA372 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AD3B7A81122308C400BDA372 /* test.pdf */; };
+		AD59853812A41B83007F31D5 /* FontCMaps in Resources */ = {isa = PBXBuildFile; fileRef = AD5984CE12A41B83007F31D5 /* FontCMaps */; };
+		AD71593513A445AE00097E9B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71593413A445AE00097E9B /* AVFoundation.framework */; };
+		AD71593813A445C000097E9B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71593713A445C000097E9B /* Security.framework */; };
+		AD8D53C41229EF6000C1459C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8D53C31229EF6000C1459C /* MessageUI.framework */; };
+		ADDA7FA613CF9004001B8F1F /* license.xml in Resources */ = {isa = PBXBuildFile; fileRef = ADDA7FA513CF9004001B8F1F /* license.xml */; };
+		BD01583315519D9500085E8D /* AP_line_navIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BD01583215519D9500085E8D /* AP_line_navIcon.png */; };
+		BF15F3A314ED7C6E00010DFA /* AP_unstick.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38214ED7C6E00010DFA /* AP_unstick.png */; };
+		BF15F3A414ED7C6E00010DFA /* AP_undo_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38314ED7C6E00010DFA /* AP_undo_toolbar.png */; };
+		BF15F3A514ED7C6E00010DFA /* AP_transform_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38414ED7C6E00010DFA /* AP_transform_toolbar.png */; };
+		BF15F3A614ED7C6E00010DFA /* AP_toolbarClose_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38514ED7C6E00010DFA /* AP_toolbarClose_toolbar.png */; };
+		BF15F3A714ED7C6E00010DFA /* AP_sticky.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38614ED7C6E00010DFA /* AP_sticky.png */; };
+		BF15F3A814ED7C6E00010DFA /* AP_stamp_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38714ED7C6E00010DFA /* AP_stamp_toolbar.png */; };
+		BF15F3A914ED7C6E00010DFA /* AP_segmentRight_lit.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38814ED7C6E00010DFA /* AP_segmentRight_lit.png */; };
+		BF15F3AA14ED7C6E00010DFA /* AP_segmentRight_dimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38914ED7C6E00010DFA /* AP_segmentRight_dimmed.png */; };
+		BF15F3AB14ED7C6E00010DFA /* AP_segmentMid_lit.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38A14ED7C6E00010DFA /* AP_segmentMid_lit.png */; };
+		BF15F3AC14ED7C6E00010DFA /* AP_segmentMid_dimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38B14ED7C6E00010DFA /* AP_segmentMid_dimmed.png */; };
+		BF15F3AD14ED7C6E00010DFA /* AP_segmentLeft_lit.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38C14ED7C6E00010DFA /* AP_segmentLeft_lit.png */; };
+		BF15F3AE14ED7C6E00010DFA /* AP_segmentLeft_dimmed.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38D14ED7C6E00010DFA /* AP_segmentLeft_dimmed.png */; };
+		BF15F3AF14ED7C6E00010DFA /* AP_scrollMode_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38E14ED7C6E00010DFA /* AP_scrollMode_toolbar.png */; };
+		BF15F3B014ED7C6E00010DFA /* AP_redo_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F38F14ED7C6E00010DFA /* AP_redo_toolbar.png */; };
+		BF15F3B114ED7C6E00010DFA /* AP_record.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39014ED7C6E00010DFA /* AP_record.aiff */; };
+		BF15F3B214ED7C6E00010DFA /* AP_popupEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39114ED7C6E00010DFA /* AP_popupEditor.png */; };
+		BF15F3B314ED7C6E00010DFA /* AP_popoverBg.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39214ED7C6E00010DFA /* AP_popoverBg.png */; };
+		BF15F3B414ED7C6E00010DFA /* AP_popoverArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39314ED7C6E00010DFA /* AP_popoverArrowUp.png */; };
+		BF15F3B514ED7C6E00010DFA /* AP_popoverArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39414ED7C6E00010DFA /* AP_popoverArrowRight.png */; };
+		BF15F3B614ED7C6E00010DFA /* AP_popoverArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39514ED7C6E00010DFA /* AP_popoverArrowLeft.png */; };
+		BF15F3B714ED7C6E00010DFA /* AP_popoverArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39614ED7C6E00010DFA /* AP_popoverArrowDown.png */; };
+		BF15F3B814ED7C6E00010DFA /* AP_hide.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39714ED7C6E00010DFA /* AP_hide.png */; };
+		BF15F3B914ED7C6E00010DFA /* AP_grabber_verticalRight.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39814ED7C6E00010DFA /* AP_grabber_verticalRight.png */; };
+		BF15F3BA14ED7C6E00010DFA /* AP_grabber_vertical.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39914ED7C6E00010DFA /* AP_grabber_vertical.png */; };
+		BF15F3BB14ED7C6E00010DFA /* AP_grabber_horizontal.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39A14ED7C6E00010DFA /* AP_grabber_horizontal.png */; };
+		BF15F3BC14ED7C6E00010DFA /* AP_font_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39B14ED7C6E00010DFA /* AP_font_toolbar.png */; };
+		BF15F3BD14ED7C6E00010DFA /* AP_edit_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39C14ED7C6E00010DFA /* AP_edit_toolbar.png */; };
+		BF15F3BE14ED7C6E00010DFA /* AP_delete_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39D14ED7C6E00010DFA /* AP_delete_toolbar.png */; };
+		BF15F3BF14ED7C6E00010DFA /* AP_annotationEditor.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39E14ED7C6E00010DFA /* AP_annotationEditor.png */; };
+		BF15F3C014ED7C6E00010DFA /* AP_annotationDone_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F39F14ED7C6E00010DFA /* AP_annotationDone_toolbar.png */; };
+		BF15F3C114ED7C6E00010DFA /* AP_annotationCancel_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F3A014ED7C6E00010DFA /* AP_annotationCancel_toolbar.png */; };
+		BF15F3C214ED7C6E00010DFA /* AP_annoMode_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F3A114ED7C6E00010DFA /* AP_annoMode_toolbar.png */; };
+		BF15F3C314ED7C6E00010DFA /* AP_action_toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = BF15F3A214ED7C6E00010DFA /* AP_action_toolbar.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* PDFAnnotationSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFAnnotationSampleAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* PDFAnnotationSampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFAnnotationSampleAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* PDFAnnotationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFAnnotationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* PDFAnnotationSampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFAnnotationSampleViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* PDFAnnotationSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFAnnotationSampleViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* PDFAnnotationSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFAnnotationSampleViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* PDFAnnotationSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFAnnotationSample_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* PDFAnnotationSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PDFAnnotationSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AD06CED415AF7399000BCCAD /* AP_typewriterEdit_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_typewriterEdit_toolbar.png; sourceTree = "<group>"; };
+		AD06CED515AF7399000BCCAD /* AP_typewriterEdit_toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AP_typewriterEdit_toolbar@2x.png"; sourceTree = "<group>"; };
+		AD18742B13C3AC09002C3209 /* AjiPDFLib.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = AjiPDFLib.strings; sourceTree = "<group>"; };
+		AD18742C13C3AC09002C3209 /* AP_action_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_action_popupEditor.png; sourceTree = "<group>"; };
+		AD18742D13C3AC09002C3209 /* AP_alphaMax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_alphaMax.png; sourceTree = "<group>"; };
+		AD18742E13C3AC09002C3209 /* AP_alphaMin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_alphaMin.png; sourceTree = "<group>"; };
+		AD18742F13C3AC09002C3209 /* AP_annotationDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_annotationDelete.png; sourceTree = "<group>"; };
+		AD18743013C3AC09002C3209 /* AP_annotationEdit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_annotationEdit.png; sourceTree = "<group>"; };
+		AD18743113C3AC09002C3209 /* AP_annotationHide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_annotationHide.png; sourceTree = "<group>"; };
+		AD18743213C3AC09002C3209 /* AP_background_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_background_popupEditor.png; sourceTree = "<group>"; };
+		AD18743313C3AC09002C3209 /* AP_bar_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_bar_select.png; sourceTree = "<group>"; };
+		AD18743413C3AC09002C3209 /* AP_bookmark_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_bookmark_navIcon.png; sourceTree = "<group>"; };
+		AD18743513C3AC09002C3209 /* AP_bookmarkAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_bookmarkAnnotation.png; sourceTree = "<group>"; };
+		AD18743613C3AC09002C3209 /* AP_brightnessBarSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_brightnessBarSelect.png; sourceTree = "<group>"; };
+		AD18743713C3AC09002C3209 /* AP_buttonBg_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_buttonBg_black.png; sourceTree = "<group>"; };
+		AD18743813C3AC09002C3209 /* AP_buttonBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_buttonBg.png; sourceTree = "<group>"; };
+		AD18743913C3AC09002C3209 /* AP_chooseColor_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_chooseColor_popupEditor.png; sourceTree = "<group>"; };
+		AD18743A13C3AC09002C3209 /* AP_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_colormap.png; sourceTree = "<group>"; };
+		AD18743B13C3AC09002C3209 /* AP_cornerDragger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_cornerDragger.png; sourceTree = "<group>"; };
+		AD18743C13C3AC09002C3209 /* AP_createStamp_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_createStamp_popupEditor.png; sourceTree = "<group>"; };
+		AD18743D13C3AC09002C3209 /* AP_crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_crosshair.png; sourceTree = "<group>"; };
+		AD18743E13C3AC09002C3209 /* AP_delete_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_delete_popupEditor.png; sourceTree = "<group>"; };
+		AD18743F13C3AC09002C3209 /* AP_drawingFailed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_drawingFailed.png; sourceTree = "<group>"; };
+		AD18744013C3AC09002C3209 /* AP_drawingMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_drawingMode.png; sourceTree = "<group>"; };
+		AD18744113C3AC09002C3209 /* AP_drawingPending.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_drawingPending.png; sourceTree = "<group>"; };
+		AD18744213C3AC09002C3209 /* AP_edit_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_edit_popupEditor.png; sourceTree = "<group>"; };
+		AD18744313C3AC09002C3209 /* AP_eraseMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_eraseMode.png; sourceTree = "<group>"; };
+		AD18744413C3AC09002C3209 /* AP_fileAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_fileAnnotation.png; sourceTree = "<group>"; };
+		AD18744513C3AC09002C3209 /* AP_finger_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_finger_navIcon.png; sourceTree = "<group>"; };
+		AD18744613C3AC09002C3209 /* AP_font_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_font_popupEditor.png; sourceTree = "<group>"; };
+		AD18744713C3AC09002C3209 /* AP_fontMax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_fontMax.png; sourceTree = "<group>"; };
+		AD18744813C3AC09002C3209 /* AP_fontMin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_fontMin.png; sourceTree = "<group>"; };
+		AD18744913C3AC09002C3209 /* AP_fullScreenImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_fullScreenImage.png; sourceTree = "<group>"; };
+		AD18744A13C3AC09002C3209 /* AP_goToPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_goToPage.png; sourceTree = "<group>"; };
+		AD18744B13C3AC09002C3209 /* AP_handlebarBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_handlebarBar.png; sourceTree = "<group>"; };
+		AD18744C13C3AC09002C3209 /* AP_handlebarNub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_handlebarNub.png; sourceTree = "<group>"; };
+		AD18744D13C3AC09002C3209 /* AP_helpacc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_helpacc.png; sourceTree = "<group>"; };
+		AD18744E13C3AC09002C3209 /* AP_hide_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_hide_popupEditor.png; sourceTree = "<group>"; };
+		AD18744F13C3AC09002C3209 /* AP_Highlight_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_Highlight_navIcon.png; sourceTree = "<group>"; };
+		AD18745013C3AC09002C3209 /* AP_highlightAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_highlightAnnotation.png; sourceTree = "<group>"; };
+		AD18745113C3AC09002C3209 /* AP_horizontalDragger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_horizontalDragger.png; sourceTree = "<group>"; };
+		AD18745213C3AC09002C3209 /* AP_imageAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_imageAnnotation.png; sourceTree = "<group>"; };
+		AD18745313C3AC09002C3209 /* AP_maximumTrack_colorPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_maximumTrack_colorPicker.png; sourceTree = "<group>"; };
+		AD18745413C3AC09002C3209 /* AP_minimumTrack_colorPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_minimumTrack_colorPicker.png; sourceTree = "<group>"; };
+		AD18745513C3AC09002C3209 /* AP_navOutline_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_navOutline_navIcon.png; sourceTree = "<group>"; };
+		AD18745613C3AC09002C3209 /* AP_nextSearchMatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_nextSearchMatch.png; sourceTree = "<group>"; };
+		AD18745713C3AC09002C3209 /* AP_note_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_note_navIcon.png; sourceTree = "<group>"; };
+		AD18745813C3AC09002C3209 /* AP_noteAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_noteAnnotation.png; sourceTree = "<group>"; };
+		AD18745913C3AC09002C3209 /* AP_pageNumberBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_pageNumberBg.png; sourceTree = "<group>"; };
+		AD18745A13C3AC09002C3209 /* AP_prevSearchMatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_prevSearchMatch.png; sourceTree = "<group>"; };
+		AD18745B13C3AC09002C3209 /* AP_redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_redo.png; sourceTree = "<group>"; };
+		AD18745C13C3AC09002C3209 /* AP_resizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_resizer.png; sourceTree = "<group>"; };
+		AD18745D13C3AC09002C3209 /* AP_restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_restart.png; sourceTree = "<group>"; };
+		AD18745E13C3AC09002C3209 /* AP_scrub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_scrub.png; sourceTree = "<group>"; };
+		AD18745F13C3AC09002C3209 /* AP_searchHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_searchHighlight.png; sourceTree = "<group>"; };
+		AD18746013C3AC09002C3209 /* AP_smallImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_smallImage.png; sourceTree = "<group>"; };
+		AD18746113C3AC09002C3209 /* AP_sound_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_sound_pause.png; sourceTree = "<group>"; };
+		AD18746213C3AC09002C3209 /* AP_sound_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_sound_play.png; sourceTree = "<group>"; };
+		AD18746313C3AC09002C3209 /* AP_sound_record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_sound_record.png; sourceTree = "<group>"; };
+		AD18746413C3AC09002C3209 /* AP_soundAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_soundAnnotation.png; sourceTree = "<group>"; };
+		AD18746513C3AC09002C3209 /* AP_soundStatus_preparing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_soundStatus_preparing.png; sourceTree = "<group>"; };
+		AD18746613C3AC09002C3209 /* AP_soundStatus_recording.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_soundStatus_recording.png; sourceTree = "<group>"; };
+		AD18746713C3AC09002C3209 /* AP_stamp_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_stamp_popupEditor.png; sourceTree = "<group>"; };
+		AD18746813C3AC09002C3209 /* AP_sticky_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_sticky_popupEditor.png; sourceTree = "<group>"; };
+		AD18746913C3AC09002C3209 /* AP_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_stop.png; sourceTree = "<group>"; };
+		AD18746A13C3AC09002C3209 /* AP_Strikeout_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_Strikeout_navIcon.png; sourceTree = "<group>"; };
+		AD18746B13C3AC09002C3209 /* AP_strikeoutAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_strikeoutAnnotation.png; sourceTree = "<group>"; };
+		AD18746C13C3AC09002C3209 /* AP_thicknessMax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_thicknessMax.png; sourceTree = "<group>"; };
+		AD18746D13C3AC09002C3209 /* AP_thicknessMin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_thicknessMin.png; sourceTree = "<group>"; };
+		AD18746E13C3AC09002C3209 /* AP_thumb_colorPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_thumb_colorPicker.png; sourceTree = "<group>"; };
+		AD18746F13C3AC09002C3209 /* AP_transform_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_transform_popupEditor.png; sourceTree = "<group>"; };
+		AD18747013C3AC09002C3209 /* AP_typewriter_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_typewriter_navIcon.png; sourceTree = "<group>"; };
+		AD18747113C3AC09002C3209 /* AP_Underline_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_Underline_navIcon.png; sourceTree = "<group>"; };
+		AD18747213C3AC09002C3209 /* AP_underlineAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_underlineAnnotation.png; sourceTree = "<group>"; };
+		AD18747313C3AC09002C3209 /* AP_undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_undo.png; sourceTree = "<group>"; };
+		AD18747413C3AC09002C3209 /* AP_unstick_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_unstick_popupEditor.png; sourceTree = "<group>"; };
+		AD18747513C3AC09002C3209 /* AP_verticalDragger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_verticalDragger.png; sourceTree = "<group>"; };
+		AD1D45F112D5310000A02BF5 /* libAjiPDFLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAjiPDFLib.a; sourceTree = "<group>"; };
+		AD291B8412A6023100D91ACB /* SimpleFontInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFontInfo.txt; sourceTree = "<group>"; };
+		AD3B7A81122308C400BDA372 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		AD5982D712A41109007F31D5 /* APLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLibrary.h; sourceTree = "<group>"; };
+		AD5982D812A41109007F31D5 /* APPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFDocument.h; sourceTree = "<group>"; };
+		AD5982D912A41109007F31D5 /* APPDFViewOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFViewOptions.h; sourceTree = "<group>"; };
+		AD5984CE12A41B83007F31D5 /* FontCMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FontCMaps; sourceTree = "<group>"; };
+		AD71593413A445AE00097E9B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AD71593713A445C000097E9B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AD8D53C31229EF6000C1459C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		ADDA7FA513CF9004001B8F1F /* license.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = license.xml; sourceTree = "<group>"; };
+		ADF8D7391226CD15001B6556 /* AjiPDFDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AjiPDFDefs.h; sourceTree = "<group>"; };
+		ADF8D73A1226CD15001B6556 /* AjiPDFLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AjiPDFLib.h; sourceTree = "<group>"; };
+		ADF8D73B1226CD15001B6556 /* APAnnotatingPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotatingPDFViewController.h; sourceTree = "<group>"; };
+		ADF8D73C1226CD15001B6556 /* APAnnotatingPDFViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotatingPDFViewDelegate.h; sourceTree = "<group>"; };
+		ADF8D73D1226CD15001B6556 /* APPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDF.h; sourceTree = "<group>"; };
+		ADF8D73F1226CD15001B6556 /* APPDFInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFInformation.h; sourceTree = "<group>"; };
+		ADF8D7401226CD15001B6556 /* APPDFProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFProcessor.h; sourceTree = "<group>"; };
+		ADF8D7411226CD15001B6556 /* APPDFProcessorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFProcessorDelegate.h; sourceTree = "<group>"; };
+		ADF8D7421226CD15001B6556 /* APPDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFViewController.h; sourceTree = "<group>"; };
+		ADF8D7431226CD15001B6556 /* APPDFViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDFViewDelegate.h; sourceTree = "<group>"; };
+		ADF8D7561226CD5A001B6556 /* APAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APAnnotations.h; sourceTree = "<group>"; };
+		BD01583215519D9500085E8D /* AP_line_navIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_line_navIcon.png; sourceTree = "<group>"; };
+		BF15F38214ED7C6E00010DFA /* AP_unstick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_unstick.png; sourceTree = "<group>"; };
+		BF15F38314ED7C6E00010DFA /* AP_undo_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_undo_toolbar.png; sourceTree = "<group>"; };
+		BF15F38414ED7C6E00010DFA /* AP_transform_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_transform_toolbar.png; sourceTree = "<group>"; };
+		BF15F38514ED7C6E00010DFA /* AP_toolbarClose_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_toolbarClose_toolbar.png; sourceTree = "<group>"; };
+		BF15F38614ED7C6E00010DFA /* AP_sticky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_sticky.png; sourceTree = "<group>"; };
+		BF15F38714ED7C6E00010DFA /* AP_stamp_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_stamp_toolbar.png; sourceTree = "<group>"; };
+		BF15F38814ED7C6E00010DFA /* AP_segmentRight_lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_segmentRight_lit.png; sourceTree = "<group>"; };
+		BF15F38914ED7C6E00010DFA /* AP_segmentRight_dimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_segmentRight_dimmed.png; sourceTree = "<group>"; };
+		BF15F38A14ED7C6E00010DFA /* AP_segmentMid_lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_segmentMid_lit.png; sourceTree = "<group>"; };
+		BF15F38B14ED7C6E00010DFA /* AP_segmentMid_dimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_segmentMid_dimmed.png; sourceTree = "<group>"; };
+		BF15F38C14ED7C6E00010DFA /* AP_segmentLeft_lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_segmentLeft_lit.png; sourceTree = "<group>"; };
+		BF15F38D14ED7C6E00010DFA /* AP_segmentLeft_dimmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_segmentLeft_dimmed.png; sourceTree = "<group>"; };
+		BF15F38E14ED7C6E00010DFA /* AP_scrollMode_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_scrollMode_toolbar.png; sourceTree = "<group>"; };
+		BF15F38F14ED7C6E00010DFA /* AP_redo_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_redo_toolbar.png; sourceTree = "<group>"; };
+		BF15F39014ED7C6E00010DFA /* AP_record.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = AP_record.aiff; sourceTree = "<group>"; };
+		BF15F39114ED7C6E00010DFA /* AP_popupEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_popupEditor.png; sourceTree = "<group>"; };
+		BF15F39214ED7C6E00010DFA /* AP_popoverBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_popoverBg.png; sourceTree = "<group>"; };
+		BF15F39314ED7C6E00010DFA /* AP_popoverArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_popoverArrowUp.png; sourceTree = "<group>"; };
+		BF15F39414ED7C6E00010DFA /* AP_popoverArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_popoverArrowRight.png; sourceTree = "<group>"; };
+		BF15F39514ED7C6E00010DFA /* AP_popoverArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_popoverArrowLeft.png; sourceTree = "<group>"; };
+		BF15F39614ED7C6E00010DFA /* AP_popoverArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_popoverArrowDown.png; sourceTree = "<group>"; };
+		BF15F39714ED7C6E00010DFA /* AP_hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_hide.png; sourceTree = "<group>"; };
+		BF15F39814ED7C6E00010DFA /* AP_grabber_verticalRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_grabber_verticalRight.png; sourceTree = "<group>"; };
+		BF15F39914ED7C6E00010DFA /* AP_grabber_vertical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_grabber_vertical.png; sourceTree = "<group>"; };
+		BF15F39A14ED7C6E00010DFA /* AP_grabber_horizontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_grabber_horizontal.png; sourceTree = "<group>"; };
+		BF15F39B14ED7C6E00010DFA /* AP_font_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_font_toolbar.png; sourceTree = "<group>"; };
+		BF15F39C14ED7C6E00010DFA /* AP_edit_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_edit_toolbar.png; sourceTree = "<group>"; };
+		BF15F39D14ED7C6E00010DFA /* AP_delete_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_delete_toolbar.png; sourceTree = "<group>"; };
+		BF15F39E14ED7C6E00010DFA /* AP_annotationEditor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_annotationEditor.png; sourceTree = "<group>"; };
+		BF15F39F14ED7C6E00010DFA /* AP_annotationDone_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_annotationDone_toolbar.png; sourceTree = "<group>"; };
+		BF15F3A014ED7C6E00010DFA /* AP_annotationCancel_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_annotationCancel_toolbar.png; sourceTree = "<group>"; };
+		BF15F3A114ED7C6E00010DFA /* AP_annoMode_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_annoMode_toolbar.png; sourceTree = "<group>"; };
+		BF15F3A214ED7C6E00010DFA /* AP_action_toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AP_action_toolbar.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				AD8D53C41229EF6000C1459C /* MessageUI.framework in Frameworks */,
+				AD1D45F212D5310000A02BF5 /* libAjiPDFLib.a in Frameworks */,
+				AD71593513A445AE00097E9B /* AVFoundation.framework in Frameworks */,
+				AD71593813A445C000097E9B /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* PDFAnnotationSampleAppDelegate.h */,
+				1D3623250D0F684500981E51 /* PDFAnnotationSampleAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* PDFAnnotationSampleViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* PDFAnnotationSampleViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* PDFAnnotationSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				AD3B7A541222FCA100BDA372 /* Aji PDF Library */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* PDFAnnotationSample_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADDA7FA513CF9004001B8F1F /* license.xml */,
+				AD3B7A81122308C400BDA372 /* test.pdf */,
+				2899E5210DE3E06400AC0155 /* PDFAnnotationSampleViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* PDFAnnotationSample-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				AD8D53C31229EF6000C1459C /* MessageUI.framework */,
+				AD71593413A445AE00097E9B /* AVFoundation.framework */,
+				AD71593713A445C000097E9B /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD3B7A541222FCA100BDA372 /* Aji PDF Library */ = {
+			isa = PBXGroup;
+			children = (
+				ADF8D7381226CD15001B6556 /* include */,
+				ADF8D7441226CD15001B6556 /* lib */,
+				ADF8DE2912276920001B6556 /* resources */,
+			);
+			name = "Aji PDF Library";
+			sourceTree = "<group>";
+		};
+		ADF8D7381226CD15001B6556 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				ADF8D73A1226CD15001B6556 /* AjiPDFLib.h */,
+				ADF8D7391226CD15001B6556 /* AjiPDFDefs.h */,
+				AD5982D712A41109007F31D5 /* APLibrary.h */,
+				ADF8D73D1226CD15001B6556 /* APPDF.h */,
+				AD5982D812A41109007F31D5 /* APPDFDocument.h */,
+				AD5982D912A41109007F31D5 /* APPDFViewOptions.h */,
+				ADF8D7561226CD5A001B6556 /* APAnnotations.h */,
+				ADF8D73B1226CD15001B6556 /* APAnnotatingPDFViewController.h */,
+				ADF8D73C1226CD15001B6556 /* APAnnotatingPDFViewDelegate.h */,
+				ADF8D73F1226CD15001B6556 /* APPDFInformation.h */,
+				ADF8D7401226CD15001B6556 /* APPDFProcessor.h */,
+				ADF8D7411226CD15001B6556 /* APPDFProcessorDelegate.h */,
+				ADF8D7421226CD15001B6556 /* APPDFViewController.h */,
+				ADF8D7431226CD15001B6556 /* APPDFViewDelegate.h */,
+			);
+			name = include;
+			path = ../../include;
+			sourceTree = SOURCE_ROOT;
+		};
+		ADF8D7441226CD15001B6556 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AD1D45F112D5310000A02BF5 /* libAjiPDFLib.a */,
+			);
+			name = lib;
+			path = ../../lib;
+			sourceTree = SOURCE_ROOT;
+		};
+		ADF8DE2912276920001B6556 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD18742B13C3AC09002C3209 /* AjiPDFLib.strings */,
+				AD18742C13C3AC09002C3209 /* AP_action_popupEditor.png */,
+				BF15F3A214ED7C6E00010DFA /* AP_action_toolbar.png */,
+				AD18742D13C3AC09002C3209 /* AP_alphaMax.png */,
+				AD18742E13C3AC09002C3209 /* AP_alphaMin.png */,
+				BF15F3A114ED7C6E00010DFA /* AP_annoMode_toolbar.png */,
+				BF15F3A014ED7C6E00010DFA /* AP_annotationCancel_toolbar.png */,
+				AD18742F13C3AC09002C3209 /* AP_annotationDelete.png */,
+				BF15F39F14ED7C6E00010DFA /* AP_annotationDone_toolbar.png */,
+				AD18743013C3AC09002C3209 /* AP_annotationEdit.png */,
+				BF15F39E14ED7C6E00010DFA /* AP_annotationEditor.png */,
+				AD18743113C3AC09002C3209 /* AP_annotationHide.png */,
+				AD18743213C3AC09002C3209 /* AP_background_popupEditor.png */,
+				AD18743313C3AC09002C3209 /* AP_bar_select.png */,
+				AD18743413C3AC09002C3209 /* AP_bookmark_navIcon.png */,
+				AD18743513C3AC09002C3209 /* AP_bookmarkAnnotation.png */,
+				AD18743613C3AC09002C3209 /* AP_brightnessBarSelect.png */,
+				AD18743813C3AC09002C3209 /* AP_buttonBg.png */,
+				AD18743713C3AC09002C3209 /* AP_buttonBg_black.png */,
+				AD18743913C3AC09002C3209 /* AP_chooseColor_popupEditor.png */,
+				AD18743A13C3AC09002C3209 /* AP_colormap.png */,
+				AD18743B13C3AC09002C3209 /* AP_cornerDragger.png */,
+				AD18743C13C3AC09002C3209 /* AP_createStamp_popupEditor.png */,
+				AD18743D13C3AC09002C3209 /* AP_crosshair.png */,
+				AD18743E13C3AC09002C3209 /* AP_delete_popupEditor.png */,
+				BF15F39D14ED7C6E00010DFA /* AP_delete_toolbar.png */,
+				AD18743F13C3AC09002C3209 /* AP_drawingFailed.png */,
+				AD18744013C3AC09002C3209 /* AP_drawingMode.png */,
+				AD18744113C3AC09002C3209 /* AP_drawingPending.png */,
+				AD18744213C3AC09002C3209 /* AP_edit_popupEditor.png */,
+				BF15F39C14ED7C6E00010DFA /* AP_edit_toolbar.png */,
+				AD18744313C3AC09002C3209 /* AP_eraseMode.png */,
+				AD18744413C3AC09002C3209 /* AP_fileAnnotation.png */,
+				AD18744513C3AC09002C3209 /* AP_finger_navIcon.png */,
+				AD18744613C3AC09002C3209 /* AP_font_popupEditor.png */,
+				BF15F39B14ED7C6E00010DFA /* AP_font_toolbar.png */,
+				AD18744713C3AC09002C3209 /* AP_fontMax.png */,
+				AD18744813C3AC09002C3209 /* AP_fontMin.png */,
+				AD18744913C3AC09002C3209 /* AP_fullScreenImage.png */,
+				AD18744A13C3AC09002C3209 /* AP_goToPage.png */,
+				BF15F39A14ED7C6E00010DFA /* AP_grabber_horizontal.png */,
+				BF15F39914ED7C6E00010DFA /* AP_grabber_vertical.png */,
+				BF15F39814ED7C6E00010DFA /* AP_grabber_verticalRight.png */,
+				AD18744B13C3AC09002C3209 /* AP_handlebarBar.png */,
+				AD18744C13C3AC09002C3209 /* AP_handlebarNub.png */,
+				AD18744D13C3AC09002C3209 /* AP_helpacc.png */,
+				BF15F39714ED7C6E00010DFA /* AP_hide.png */,
+				AD18744E13C3AC09002C3209 /* AP_hide_popupEditor.png */,
+				AD18744F13C3AC09002C3209 /* AP_Highlight_navIcon.png */,
+				AD18745013C3AC09002C3209 /* AP_highlightAnnotation.png */,
+				AD18745113C3AC09002C3209 /* AP_horizontalDragger.png */,
+				AD18745213C3AC09002C3209 /* AP_imageAnnotation.png */,
+				BD01583215519D9500085E8D /* AP_line_navIcon.png */,
+				AD18745313C3AC09002C3209 /* AP_maximumTrack_colorPicker.png */,
+				AD18745413C3AC09002C3209 /* AP_minimumTrack_colorPicker.png */,
+				AD18745513C3AC09002C3209 /* AP_navOutline_navIcon.png */,
+				AD18745613C3AC09002C3209 /* AP_nextSearchMatch.png */,
+				AD18745713C3AC09002C3209 /* AP_note_navIcon.png */,
+				AD18745813C3AC09002C3209 /* AP_noteAnnotation.png */,
+				AD18745913C3AC09002C3209 /* AP_pageNumberBg.png */,
+				BF15F39614ED7C6E00010DFA /* AP_popoverArrowDown.png */,
+				BF15F39514ED7C6E00010DFA /* AP_popoverArrowLeft.png */,
+				BF15F39414ED7C6E00010DFA /* AP_popoverArrowRight.png */,
+				BF15F39314ED7C6E00010DFA /* AP_popoverArrowUp.png */,
+				BF15F39214ED7C6E00010DFA /* AP_popoverBg.png */,
+				BF15F39114ED7C6E00010DFA /* AP_popupEditor.png */,
+				AD18745A13C3AC09002C3209 /* AP_prevSearchMatch.png */,
+				BF15F39014ED7C6E00010DFA /* AP_record.aiff */,
+				AD18745B13C3AC09002C3209 /* AP_redo.png */,
+				BF15F38F14ED7C6E00010DFA /* AP_redo_toolbar.png */,
+				AD18745C13C3AC09002C3209 /* AP_resizer.png */,
+				AD18745D13C3AC09002C3209 /* AP_restart.png */,
+				BF15F38E14ED7C6E00010DFA /* AP_scrollMode_toolbar.png */,
+				AD18745E13C3AC09002C3209 /* AP_scrub.png */,
+				AD18745F13C3AC09002C3209 /* AP_searchHighlight.png */,
+				BF15F38D14ED7C6E00010DFA /* AP_segmentLeft_dimmed.png */,
+				BF15F38C14ED7C6E00010DFA /* AP_segmentLeft_lit.png */,
+				BF15F38B14ED7C6E00010DFA /* AP_segmentMid_dimmed.png */,
+				BF15F38A14ED7C6E00010DFA /* AP_segmentMid_lit.png */,
+				BF15F38914ED7C6E00010DFA /* AP_segmentRight_dimmed.png */,
+				BF15F38814ED7C6E00010DFA /* AP_segmentRight_lit.png */,
+				AD18746013C3AC09002C3209 /* AP_smallImage.png */,
+				AD18746113C3AC09002C3209 /* AP_sound_pause.png */,
+				AD18746213C3AC09002C3209 /* AP_sound_play.png */,
+				AD18746313C3AC09002C3209 /* AP_sound_record.png */,
+				AD18746413C3AC09002C3209 /* AP_soundAnnotation.png */,
+				AD18746513C3AC09002C3209 /* AP_soundStatus_preparing.png */,
+				AD18746613C3AC09002C3209 /* AP_soundStatus_recording.png */,
+				AD18746713C3AC09002C3209 /* AP_stamp_popupEditor.png */,
+				BF15F38714ED7C6E00010DFA /* AP_stamp_toolbar.png */,
+				BF15F38614ED7C6E00010DFA /* AP_sticky.png */,
+				AD18746813C3AC09002C3209 /* AP_sticky_popupEditor.png */,
+				AD18746913C3AC09002C3209 /* AP_stop.png */,
+				AD18746A13C3AC09002C3209 /* AP_Strikeout_navIcon.png */,
+				AD18746B13C3AC09002C3209 /* AP_strikeoutAnnotation.png */,
+				AD18746C13C3AC09002C3209 /* AP_thicknessMax.png */,
+				AD18746D13C3AC09002C3209 /* AP_thicknessMin.png */,
+				AD18746E13C3AC09002C3209 /* AP_thumb_colorPicker.png */,
+				BF15F38514ED7C6E00010DFA /* AP_toolbarClose_toolbar.png */,
+				AD18746F13C3AC09002C3209 /* AP_transform_popupEditor.png */,
+				BF15F38414ED7C6E00010DFA /* AP_transform_toolbar.png */,
+				AD18747013C3AC09002C3209 /* AP_typewriter_navIcon.png */,
+				AD06CED415AF7399000BCCAD /* AP_typewriterEdit_toolbar.png */,
+				AD06CED515AF7399000BCCAD /* AP_typewriterEdit_toolbar@2x.png */,
+				AD18747113C3AC09002C3209 /* AP_Underline_navIcon.png */,
+				AD18747213C3AC09002C3209 /* AP_underlineAnnotation.png */,
+				AD18747313C3AC09002C3209 /* AP_undo.png */,
+				BF15F38314ED7C6E00010DFA /* AP_undo_toolbar.png */,
+				BF15F38214ED7C6E00010DFA /* AP_unstick.png */,
+				AD18747413C3AC09002C3209 /* AP_unstick_popupEditor.png */,
+				AD18747513C3AC09002C3209 /* AP_verticalDragger.png */,
+				AD5984CE12A41B83007F31D5 /* FontCMaps */,
+				AD291B8412A6023100D91ACB /* SimpleFontInfo.txt */,
+			);
+			name = resources;
+			path = ../../resources;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* PDFAnnotationSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PDFAnnotationSample" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFAnnotationSample;
+			productName = PDFAnnotationSample;
+			productReference = 1D6058910D05DD3D006BFB54 /* PDFAnnotationSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PDFAnnotationSample" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* PDFAnnotationSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* PDFAnnotationSampleViewController.xib in Resources */,
+				AD3B7A82122308C400BDA372 /* test.pdf in Resources */,
+				AD59853812A41B83007F31D5 /* FontCMaps in Resources */,
+				AD291B8512A6023100D91ACB /* SimpleFontInfo.txt in Resources */,
+				AD18747613C3AC09002C3209 /* AjiPDFLib.strings in Resources */,
+				AD18747713C3AC09002C3209 /* AP_action_popupEditor.png in Resources */,
+				AD18747813C3AC09002C3209 /* AP_alphaMax.png in Resources */,
+				AD18747913C3AC09002C3209 /* AP_alphaMin.png in Resources */,
+				AD18747A13C3AC09002C3209 /* AP_annotationDelete.png in Resources */,
+				AD18747B13C3AC09002C3209 /* AP_annotationEdit.png in Resources */,
+				AD18747C13C3AC09002C3209 /* AP_annotationHide.png in Resources */,
+				AD18747D13C3AC09002C3209 /* AP_background_popupEditor.png in Resources */,
+				AD18747E13C3AC09002C3209 /* AP_bar_select.png in Resources */,
+				AD18747F13C3AC09002C3209 /* AP_bookmark_navIcon.png in Resources */,
+				AD18748013C3AC09002C3209 /* AP_bookmarkAnnotation.png in Resources */,
+				AD18748113C3AC09002C3209 /* AP_brightnessBarSelect.png in Resources */,
+				AD18748213C3AC09002C3209 /* AP_buttonBg_black.png in Resources */,
+				AD18748313C3AC09002C3209 /* AP_buttonBg.png in Resources */,
+				AD18748413C3AC09002C3209 /* AP_chooseColor_popupEditor.png in Resources */,
+				AD18748513C3AC09002C3209 /* AP_colormap.png in Resources */,
+				AD18748613C3AC09002C3209 /* AP_cornerDragger.png in Resources */,
+				AD18748713C3AC09002C3209 /* AP_createStamp_popupEditor.png in Resources */,
+				AD18748813C3AC09002C3209 /* AP_crosshair.png in Resources */,
+				AD18748913C3AC09002C3209 /* AP_delete_popupEditor.png in Resources */,
+				AD18748A13C3AC09002C3209 /* AP_drawingFailed.png in Resources */,
+				AD18748B13C3AC09002C3209 /* AP_drawingMode.png in Resources */,
+				AD18748C13C3AC09002C3209 /* AP_drawingPending.png in Resources */,
+				AD18748D13C3AC09002C3209 /* AP_edit_popupEditor.png in Resources */,
+				AD18748E13C3AC09002C3209 /* AP_eraseMode.png in Resources */,
+				AD18748F13C3AC09002C3209 /* AP_fileAnnotation.png in Resources */,
+				AD18749013C3AC09002C3209 /* AP_finger_navIcon.png in Resources */,
+				AD18749113C3AC09002C3209 /* AP_font_popupEditor.png in Resources */,
+				AD18749213C3AC09002C3209 /* AP_fontMax.png in Resources */,
+				AD18749313C3AC09002C3209 /* AP_fontMin.png in Resources */,
+				AD18749413C3AC09002C3209 /* AP_fullScreenImage.png in Resources */,
+				AD18749513C3AC09002C3209 /* AP_goToPage.png in Resources */,
+				AD18749613C3AC09002C3209 /* AP_handlebarBar.png in Resources */,
+				AD18749713C3AC09002C3209 /* AP_handlebarNub.png in Resources */,
+				AD18749813C3AC09002C3209 /* AP_helpacc.png in Resources */,
+				AD18749913C3AC09002C3209 /* AP_hide_popupEditor.png in Resources */,
+				AD18749A13C3AC09002C3209 /* AP_Highlight_navIcon.png in Resources */,
+				AD18749B13C3AC09002C3209 /* AP_highlightAnnotation.png in Resources */,
+				AD18749C13C3AC09002C3209 /* AP_horizontalDragger.png in Resources */,
+				AD18749D13C3AC09002C3209 /* AP_imageAnnotation.png in Resources */,
+				AD18749E13C3AC09002C3209 /* AP_maximumTrack_colorPicker.png in Resources */,
+				AD18749F13C3AC09002C3209 /* AP_minimumTrack_colorPicker.png in Resources */,
+				AD1874A013C3AC09002C3209 /* AP_navOutline_navIcon.png in Resources */,
+				AD1874A113C3AC09002C3209 /* AP_nextSearchMatch.png in Resources */,
+				AD1874A213C3AC09002C3209 /* AP_note_navIcon.png in Resources */,
+				AD1874A313C3AC09002C3209 /* AP_noteAnnotation.png in Resources */,
+				AD1874A413C3AC09002C3209 /* AP_pageNumberBg.png in Resources */,
+				AD1874A513C3AC09002C3209 /* AP_prevSearchMatch.png in Resources */,
+				AD1874A613C3AC09002C3209 /* AP_redo.png in Resources */,
+				AD1874A713C3AC09002C3209 /* AP_resizer.png in Resources */,
+				AD1874A813C3AC09002C3209 /* AP_restart.png in Resources */,
+				AD1874A913C3AC09002C3209 /* AP_scrub.png in Resources */,
+				AD1874AA13C3AC09002C3209 /* AP_searchHighlight.png in Resources */,
+				AD1874AB13C3AC09002C3209 /* AP_smallImage.png in Resources */,
+				AD1874AC13C3AC09002C3209 /* AP_sound_pause.png in Resources */,
+				AD1874AD13C3AC09002C3209 /* AP_sound_play.png in Resources */,
+				AD1874AE13C3AC09002C3209 /* AP_sound_record.png in Resources */,
+				AD1874AF13C3AC09002C3209 /* AP_soundAnnotation.png in Resources */,
+				AD1874B013C3AC09002C3209 /* AP_soundStatus_preparing.png in Resources */,
+				AD1874B113C3AC09002C3209 /* AP_soundStatus_recording.png in Resources */,
+				AD1874B213C3AC09002C3209 /* AP_stamp_popupEditor.png in Resources */,
+				AD1874B313C3AC09002C3209 /* AP_sticky_popupEditor.png in Resources */,
+				AD1874B413C3AC09002C3209 /* AP_stop.png in Resources */,
+				AD1874B513C3AC09002C3209 /* AP_Strikeout_navIcon.png in Resources */,
+				AD1874B613C3AC09002C3209 /* AP_strikeoutAnnotation.png in Resources */,
+				AD1874B713C3AC09002C3209 /* AP_thicknessMax.png in Resources */,
+				AD1874B813C3AC09002C3209 /* AP_thicknessMin.png in Resources */,
+				AD1874B913C3AC09002C3209 /* AP_thumb_colorPicker.png in Resources */,
+				AD1874BA13C3AC09002C3209 /* AP_transform_popupEditor.png in Resources */,
+				AD1874BB13C3AC09002C3209 /* AP_typewriter_navIcon.png in Resources */,
+				AD1874BC13C3AC09002C3209 /* AP_Underline_navIcon.png in Resources */,
+				AD1874BD13C3AC09002C3209 /* AP_underlineAnnotation.png in Resources */,
+				AD1874BE13C3AC09002C3209 /* AP_undo.png in Resources */,
+				AD1874BF13C3AC09002C3209 /* AP_unstick_popupEditor.png in Resources */,
+				AD1874C013C3AC09002C3209 /* AP_verticalDragger.png in Resources */,
+				ADDA7FA613CF9004001B8F1F /* license.xml in Resources */,
+				BF15F3A314ED7C6E00010DFA /* AP_unstick.png in Resources */,
+				BF15F3A414ED7C6E00010DFA /* AP_undo_toolbar.png in Resources */,
+				BF15F3A514ED7C6E00010DFA /* AP_transform_toolbar.png in Resources */,
+				BF15F3A614ED7C6E00010DFA /* AP_toolbarClose_toolbar.png in Resources */,
+				BF15F3A714ED7C6E00010DFA /* AP_sticky.png in Resources */,
+				BF15F3A814ED7C6E00010DFA /* AP_stamp_toolbar.png in Resources */,
+				BF15F3A914ED7C6E00010DFA /* AP_segmentRight_lit.png in Resources */,
+				BF15F3AA14ED7C6E00010DFA /* AP_segmentRight_dimmed.png in Resources */,
+				BF15F3AB14ED7C6E00010DFA /* AP_segmentMid_lit.png in Resources */,
+				BF15F3AC14ED7C6E00010DFA /* AP_segmentMid_dimmed.png in Resources */,
+				BF15F3AD14ED7C6E00010DFA /* AP_segmentLeft_lit.png in Resources */,
+				BF15F3AE14ED7C6E00010DFA /* AP_segmentLeft_dimmed.png in Resources */,
+				BF15F3AF14ED7C6E00010DFA /* AP_scrollMode_toolbar.png in Resources */,
+				BF15F3B014ED7C6E00010DFA /* AP_redo_toolbar.png in Resources */,
+				BF15F3B114ED7C6E00010DFA /* AP_record.aiff in Resources */,
+				BF15F3B214ED7C6E00010DFA /* AP_popupEditor.png in Resources */,
+				BF15F3B314ED7C6E00010DFA /* AP_popoverBg.png in Resources */,
+				BF15F3B414ED7C6E00010DFA /* AP_popoverArrowUp.png in Resources */,
+				BF15F3B514ED7C6E00010DFA /* AP_popoverArrowRight.png in Resources */,
+				BF15F3B614ED7C6E00010DFA /* AP_popoverArrowLeft.png in Resources */,
+				BF15F3B714ED7C6E00010DFA /* AP_popoverArrowDown.png in Resources */,
+				BF15F3B814ED7C6E00010DFA /* AP_hide.png in Resources */,
+				BF15F3B914ED7C6E00010DFA /* AP_grabber_verticalRight.png in Resources */,
+				BF15F3BA14ED7C6E00010DFA /* AP_grabber_vertical.png in Resources */,
+				BF15F3BB14ED7C6E00010DFA /* AP_grabber_horizontal.png in Resources */,
+				BF15F3BC14ED7C6E00010DFA /* AP_font_toolbar.png in Resources */,
+				BF15F3BD14ED7C6E00010DFA /* AP_edit_toolbar.png in Resources */,
+				BF15F3BE14ED7C6E00010DFA /* AP_delete_toolbar.png in Resources */,
+				BF15F3BF14ED7C6E00010DFA /* AP_annotationEditor.png in Resources */,
+				BF15F3C014ED7C6E00010DFA /* AP_annotationDone_toolbar.png in Resources */,
+				BF15F3C114ED7C6E00010DFA /* AP_annotationCancel_toolbar.png in Resources */,
+				BF15F3C214ED7C6E00010DFA /* AP_annoMode_toolbar.png in Resources */,
+				BF15F3C314ED7C6E00010DFA /* AP_action_toolbar.png in Resources */,
+				BD01583315519D9500085E8D /* AP_line_navIcon.png in Resources */,
+				AD06CED615AF7399000BCCAD /* AP_typewriterEdit_toolbar.png in Resources */,
+				AD06CED715AF7399000BCCAD /* AP_typewriterEdit_toolbar@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* PDFAnnotationSampleAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* PDFAnnotationSampleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PDFAnnotationSample_Prefix.pch;
+				INFOPLIST_FILE = "PDFAnnotationSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib\"",
+				);
+				PRODUCT_NAME = PDFAnnotationSample;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PDFAnnotationSample_Prefix.pch;
+				INFOPLIST_FILE = "PDFAnnotationSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib\"",
+				);
+				PRODUCT_NAME = PDFAnnotationSample;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lz",
+					"-lsqlite3",
+					"-lstdc++",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lz",
+					"-lsqlite3",
+					"-lstdc++",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PDFAnnotationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PDFAnnotationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

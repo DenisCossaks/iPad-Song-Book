@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0D562D39-80C3-45AE-9F2F-7871C040EF76</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hymnals</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>99E7369A-24DA-438A-977D-39395B5B9DF5</key>
+		<string>ssh://aslan.beanstalkapp.com//gia-hymnals-ipad-2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hymnals.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>99E7369A-24DA-438A-977D-39395B5B9DF5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://aslan.beanstalkapp.com//gia-hymnals-ipad-2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>99E7369A-24DA-438A-977D-39395B5B9DF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>99E7369A-24DA-438A-977D-39395B5B9DF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gia-hymnals-ipad-2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

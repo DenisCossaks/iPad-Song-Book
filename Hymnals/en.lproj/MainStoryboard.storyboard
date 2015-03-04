@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Purchase View Controller-->
+        <scene sceneID="1Mp-iO-6kX">
+            <objects>
+                <viewController restorationIdentifier="HYPurchaseViewController" storyboardIdentifier="HYPurchaseViewController" id="pI2-ny-TJ1" customClass="HYPurchaseViewController" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="poR-fM-esa">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="550"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="Q80-uJ-RiL">
+                                <rect key="frame" x="20" y="20" width="172" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Cxg-ti-ezg">
+                                <rect key="frame" x="20" y="232" width="460" height="298"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HYPurchaseCell" id="Nfx-ld-xIO" customClass="HYPurchaseCell">
+                                        <rect key="frame" x="0.0" y="22" width="460" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nfx-ld-xIO" id="Kcp-ba-50U">
+                                            <rect key="frame" x="0.0" y="0.0" width="460" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yil-om-rED">
+                                                    <rect key="frame" x="10" y="11" width="258" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gz6-8v-w2g">
+                                                    <rect key="frame" x="283" y="11" width="72" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6t1-9y-Krw">
+                                                    <rect key="frame" x="377" y="7" width="73" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Buy">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="buyButtonTouched" destination="Nfx-ld-xIO" eventType="touchUpInside" id="HlT-Af-j0w"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="yil-om-rED" id="3H8-le-tAr"/>
+                                            <outlet property="priceLabel" destination="gz6-8v-w2g" id="hIo-Q1-fB8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="pI2-ny-TJ1" id="zMI-T4-b8J"/>
+                                    <outlet property="delegate" destination="pI2-ny-TJ1" id="4wT-QC-Th8"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xao-zC-xQj">
+                                <rect key="frame" x="212" y="20" width="268" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="550"/>
+                    <connections>
+                        <outlet property="contentTableView" destination="Cxg-ti-ezg" id="miY-Js-vS4"/>
+                        <outlet property="coverImageView" destination="Q80-uJ-RiL" id="AdY-8m-bRf"/>
+                        <outlet property="descriptionLabel" destination="Xao-zC-xQj" id="Ebk-uc-Amx"/>
+                        <outlet property="view" destination="poR-fM-esa" id="6LK-Ju-tim"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40j-C5-Or7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="1212"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="HYRootViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-portrait.png" id="xKc-OX-zpP">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="help-fullscreen.png" id="4xQ-TT-ox2">
+                                <rect key="frame" x="91" y="23" width="586" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="gfQ-eU-8cP" userLabel="Navigation View">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="left" image="toolbar-background.png" id="9gM-Bq-s30">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hsf-HS-7mL">
+                                        <rect key="frame" x="234" y="3" width="300" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Hymnals">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hymnTitleButtonTouched" destination="2" eventType="touchUpInside" id="cPe-6f-ST3"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gEX-Ck-NZ1">
+                                        <rect key="frame" x="643" y="7" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addButtonTouched" destination="2" eventType="touchUpInside" id="bO5-7E-24M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dPw-WL-h4Z">
+                                        <rect key="frame" x="718" y="2" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <state key="normal" image="button-search.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchButtonTouched" destination="2" eventType="touchUpInside" id="qPK-bn-Bes"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wwd-YF-3jL">
+                                        <rect key="frame" x="678" y="2" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <state key="normal" image="button-annotate-off.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="annotationButtonTouched" destination="2" eventType="touchUpInside" id="c0V-Sw-qOh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XiI-r0-Xha">
+                                        <rect key="frame" x="51" y="2" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="button-servicelists.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="serviceListsButtonTouched" destination="2" eventType="touchUpInside" id="tn6-9p-zfc"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0vg-td-rpw">
+                                        <rect key="frame" x="10" y="2" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="button-home.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="homeButtonTouched" destination="2" eventType="touchUpInside" id="F1R-Bl-h44"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rFf-u4-gPe">
+                                        <rect key="frame" x="10" y="2" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="button-store.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="storeButtonTouched:" destination="2" eventType="touchUpInside" id="F52-Or-wfi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pbK-4B-DwS">
+                                        <rect key="frame" x="96" y="2" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="button-hymnals.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hymnalsListButtonTouched" destination="2" eventType="touchUpInside" id="16c-zC-mvr"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GFa-kw-OZw">
+                                        <rect key="frame" x="141" y="2" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="button-listen-off.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="listenButtonTouched" destination="2" eventType="touchUpInside" id="v9z-m6-JUP"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="P68-t2-uXQ">
+                                        <rect key="frame" x="191" y="12" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="helpButtonTouched" destination="2" eventType="touchUpInside" id="aJk-6k-YTB"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RUD-iR-B2z">
+                                        <rect key="frame" x="264" y="0.0" width="240" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" red="0.74509803921568629" green="0.90980392156862744" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="Ped-Ts-EOs" userLabel="Hint View" showNotesWithSelection="YES">
+                                <rect key="frame" x="0.0" y="44" width="768" height="237"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-home.png" id="Phm-XH-AfF">
+                                        <rect key="frame" x="23" y="23" width="132" height="198"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-servicelists.png" id="6iS-Ud-g5g">
+                                        <rect key="frame" x="66" y="23" width="148" height="142"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-hymnals.png" id="lmZ-Gn-v1a">
+                                        <rect key="frame" x="109" y="23" width="210" height="111"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-listen.png" id="TXB-rR-0em">
+                                        <rect key="frame" x="146" y="23" width="148" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-help.png" id="eDI-bW-PoK">
+                                        <rect key="frame" x="181" y="23" width="57" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-search.png" id="eV3-rA-wOd">
+                                        <rect key="frame" x="584" y="23" width="151" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-add.png" id="sS7-dL-Hj7">
+                                        <rect key="frame" x="519" y="23" width="140" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="sTB-z6-eL4">
+                                        <rect key="frame" x="259" y="23" width="251" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-dial.png" id="YNQ-tF-heK">
+                                                <rect key="frame" x="3" y="0.0" width="141" height="202"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="RBU-hm-1gO" userLabel="Support View 1">
+                                <rect key="frame" x="395" y="879" width="343" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-support.png" id="vJK-cw-su1">
+                                        <rect key="frame" x="20" y="12" width="149" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-getsatisfaction.png" id="Lfu-cO-PjF">
+                                        <rect key="frame" x="193" y="10" width="130" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jXG-2r-brt">
+                                        <rect key="frame" x="78" y="61" width="190" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="3"/>
+                                        <state key="normal" title="Visit Our Support Site" backgroundImage="button-large.png">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getSatisfactionButtonTouched" destination="2" eventType="touchUpInside" id="yWK-Wm-x4M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.16862745100000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="263" sectionHeaderHeight="22" sectionFooterHeight="22" id="iPW-CR-i1v">
+                                <rect key="frame" x="0.0" y="44" width="768" height="796"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="HYHymnalCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="HYHymnalCell" rowHeight="264" id="MJe-M3-PF2" customClass="HYHymnalCell">
+                                        <rect key="frame" x="0.0" y="22" width="768" height="264"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MJe-M3-PF2" id="Hjq-6P-Kbf">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="264"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" id="zSu-Yz-Gah" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="pjJ-Ka-FTQ">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lOg-be-gV1">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MQd-4S-oSY">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="zSu-Yz-Gah" eventType="touchUpInside" id="VKV-du-h8G"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="pjJ-Ka-FTQ" id="zB1-aV-c4i"/>
+                                                        <outlet property="delegate" destination="MJe-M3-PF2" id="FWV-6v-01N"/>
+                                                        <outlet property="nameLabel" destination="lOg-be-gV1" id="Hlr-ni-Oar"/>
+                                                    </connections>
+                                                </view>
+                                                <view tag="1" contentMode="scaleToFill" id="rfj-QO-iAt" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="192" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="NQD-up-Q3o">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uEi-3E-45X">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Sk-At-Fne">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="rfj-QO-iAt" eventType="touchUpInside" id="GR8-YO-kOo"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="NQD-up-Q3o" id="Ven-NZ-K7h"/>
+                                                        <outlet property="delegate" destination="MJe-M3-PF2" id="5s0-fl-jVO"/>
+                                                        <outlet property="nameLabel" destination="uEi-3E-45X" id="bdy-WY-gR2"/>
+                                                    </connections>
+                                                </view>
+                                                <view tag="2" contentMode="scaleToFill" id="ObH-Oj-UfC" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="384" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="SM7-eI-YA0">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FQL-0R-SBr">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9U7-6F-0Tf">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="ObH-Oj-UfC" eventType="touchUpInside" id="5Y9-VN-QJ4"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="SM7-eI-YA0" id="Xp2-NO-5YH"/>
+                                                        <outlet property="delegate" destination="MJe-M3-PF2" id="B5B-l6-PSV"/>
+                                                        <outlet property="nameLabel" destination="FQL-0R-SBr" id="OcC-hG-FoU"/>
+                                                    </connections>
+                                                </view>
+                                                <view tag="3" contentMode="scaleToFill" id="eHj-Va-OIN" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="576" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="V44-eQ-vyz">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fl3-pg-lhT">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6cf-wh-gAC">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="eHj-Va-OIN" eventType="touchUpInside" id="Czq-tj-CiU"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="V44-eQ-vyz" id="iOC-3i-ItZ"/>
+                                                        <outlet property="delegate" destination="MJe-M3-PF2" id="1gA-3N-HwR"/>
+                                                        <outlet property="nameLabel" destination="Fl3-pg-lhT" id="oP8-OU-zhE"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outletCollection property="collectionViews" destination="zSu-Yz-Gah" id="deM-y8-PM2"/>
+                                            <outletCollection property="collectionViews" destination="rfj-QO-iAt" id="Lps-pm-BGn"/>
+                                            <outletCollection property="collectionViews" destination="ObH-Oj-UfC" id="jJo-OM-KEn"/>
+                                            <outletCollection property="collectionViews" destination="eHj-Va-OIN" id="qP5-KB-bTM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="gec-Dh-hdb"/>
+                                    <outlet property="delegate" destination="2" id="tcp-Qg-zhg"/>
+                                </connections>
+                            </tableView>
+                            <view alpha="0.0" contentMode="scaleToFill" id="nhX-8b-Tsi" userLabel="Help View">
+                                <rect key="frame" x="0.0" y="10" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="ZEl-vA-3Jz">
+                                        <rect key="frame" x="0.0" y="44" width="768" height="112"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-top.png" id="PRj-BJ-I8G">
+                                                <rect key="frame" x="158" y="40" width="453" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.16862745100000001" blue="0.23529411759999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="j64-Za-Wyj">
+                                        <rect key="frame" x="0.0" y="166" width="182" height="838"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-left.png" id="u5M-hW-qbM">
+                                                <rect key="frame" x="5" y="20" width="172" height="159"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.16862745100000001" blue="0.23529411759999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="0tP-f4-vfq">
+                                        <rect key="frame" x="192" y="166" width="384" height="838"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-middle.png" id="Jj9-Vx-Mc1">
+                                                <rect key="frame" x="66" y="20" width="253" height="107"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZLm-mx-ijJ">
+                                                <rect key="frame" x="-192" y="-166" width="768" height="1009"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="helpButtonTouched" destination="2" eventType="touchUpInside" id="rMF-Kq-crm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.16862745100000001" blue="0.23529411759999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="Nzw-g4-c6b">
+                                        <rect key="frame" x="586" y="166" width="182" height="838"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="help-right.png" id="PW2-2z-ELf">
+                                                <rect key="frame" x="5" y="20" width="171" height="159"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.16862745100000001" blue="0.23529411759999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" image="help-close.png" id="Xbf-ks-WMF">
+                                        <rect key="frame" x="264" y="431" width="240" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.054901960780000002" green="0.16862745100000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="addButton" destination="gEX-Ck-NZ1" id="MzP-rS-YLn"/>
+                        <outlet property="annotationButton" destination="Wwd-YF-3jL" id="r7D-y5-wva"/>
+                        <outlet property="backgroundImageView" destination="xKc-OX-zpP" id="h6I-4P-DGl"/>
+                        <outlet property="fullscreenHelpImageView" destination="4xQ-TT-ox2" id="pmQ-6R-p0K"/>
+                        <outlet property="helpButton" destination="P68-t2-uXQ" id="QaS-ZT-E3U"/>
+                        <outlet property="helpCloseImageView" destination="Xbf-ks-WMF" id="Vx9-fL-kgV"/>
+                        <outlet property="helpHomeImageView" destination="Phm-XH-AfF" id="xXQ-D0-aEh"/>
+                        <outlet property="helpView" destination="nhX-8b-Tsi" id="lCc-46-Gj8"/>
+                        <outlet property="hintView" destination="Ped-Ts-EOs" id="DA6-H5-aSp"/>
+                        <outlet property="homeButton" destination="0vg-td-rpw" id="ooI-Up-geN"/>
+                        <outlet property="hymnTitleButton" destination="Hsf-HS-7mL" id="eX1-oK-rSw"/>
+                        <outlet property="hymnalsListButton" destination="pbK-4B-DwS" id="Y0p-cy-B5j"/>
+                        <outlet property="libraryTableView" destination="iPW-CR-i1v" id="zDq-uL-lU6"/>
+                        <outlet property="listNameLabel" destination="RUD-iR-B2z" id="FlH-Uo-Vsf"/>
+                        <outlet property="listenButton" destination="GFa-kw-OZw" id="3kn-bZ-vAX"/>
+                        <outlet property="navigationView" destination="gfQ-eU-8cP" id="UaE-Qt-gvP"/>
+                        <outlet property="searchButton" destination="dPw-WL-h4Z" id="dQV-vr-v61"/>
+                        <outlet property="serviceListsButton" destination="XiI-r0-Xha" id="K9u-az-p0i"/>
+                        <outlet property="storeButton" destination="rFf-u4-gPe" id="jfo-Ez-RLG"/>
+                        <outlet property="supportView" destination="RBU-hm-1gO" id="9F0-Vv-AVr"/>
+                        <outlet property="view" destination="5" id="f59-cD-1XQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="32"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="0w3-Ub-GGh">
+            <objects>
+                <viewController storyboardIdentifier="HYStoreViewController1" id="BJm-V2-EYI" customClass="HYStoreViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n21-Hk-Sw9">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-portrait.png" id="WK9-sW-QZS">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="263" sectionHeaderHeight="22" sectionFooterHeight="22" id="ukF-9q-uZ3">
+                                <rect key="frame" x="0.0" y="44" width="768" height="980"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="HYHymnalCollectionCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="HYHymnalCollectionCell" rowHeight="264" id="9X5-gj-LG3" customClass="HYHymnalCollectionCell">
+                                        <rect key="frame" x="0.0" y="22" width="768" height="264"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9X5-gj-LG3" id="NNQ-F6-RST">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="264"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" id="a1M-xw-PDt" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="ZUn-ca-DC2">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MW3-Dj-zqu">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qie-FT-Qj3">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="a1M-xw-PDt" eventType="touchUpInside" id="wGo-1I-t7J"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="ZUn-ca-DC2" id="WNZ-tg-i8x"/>
+                                                        <outlet property="delegate" destination="9X5-gj-LG3" id="phQ-dw-ECa"/>
+                                                        <outlet property="nameLabel" destination="MW3-Dj-zqu" id="941-xa-Yy7"/>
+                                                    </connections>
+                                                </view>
+                                                <view tag="1" contentMode="scaleToFill" id="52B-2D-KgP" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="192" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="ZLu-gy-maz">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wRi-xb-wV7">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nbg-cP-IQ9">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="52B-2D-KgP" eventType="touchUpInside" id="KIV-eU-e6i"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="ZLu-gy-maz" id="Duq-df-PGm"/>
+                                                        <outlet property="delegate" destination="9X5-gj-LG3" id="55Y-I4-EhI"/>
+                                                        <outlet property="nameLabel" destination="wRi-xb-wV7" id="GKw-RZ-sbw"/>
+                                                    </connections>
+                                                </view>
+                                                <view tag="2" contentMode="scaleToFill" id="ACr-cQ-4eo" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="384" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="KdO-Dk-sz0">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wBV-zf-2zX">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qba-45-ll0">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="ACr-cQ-4eo" eventType="touchUpInside" id="kdd-hL-DbB"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="KdO-Dk-sz0" id="k1C-qN-Qs4"/>
+                                                        <outlet property="delegate" destination="9X5-gj-LG3" id="Z3Q-23-nBZ"/>
+                                                        <outlet property="nameLabel" destination="wBV-zf-2zX" id="R2w-aY-jn9"/>
+                                                    </connections>
+                                                </view>
+                                                <view tag="3" contentMode="scaleToFill" id="0Ww-7d-khj" customClass="HYHymnalCollectionView">
+                                                    <rect key="frame" x="576" y="0.0" width="192" height="262"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="tIN-Rm-HQB">
+                                                            <rect key="frame" x="10" y="10" width="172" height="192"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dsfdsf  dsf dsf ds f dsf d fsd f dsf sd fds f dsf sd fds f dsf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fMp-tT-HrH">
+                                                            <rect key="frame" x="10" y="210" width="172" height="42"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UJE-OT-eO6">
+                                                            <rect key="frame" x="10" y="10" width="172" height="242"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <state key="normal">
+                                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <state key="highlighted">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="collectionViewButtonTouched" destination="0Ww-7d-khj" eventType="touchUpInside" id="SJL-6v-ibc"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <outlet property="coverImageView" destination="tIN-Rm-HQB" id="7dx-rJ-stS"/>
+                                                        <outlet property="delegate" destination="9X5-gj-LG3" id="Jdh-zD-xmv"/>
+                                                        <outlet property="nameLabel" destination="fMp-tT-HrH" id="Dmg-fn-psm"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outletCollection property="collectionViews" destination="a1M-xw-PDt" id="vil-kR-MDR"/>
+                                            <outletCollection property="collectionViews" destination="52B-2D-KgP" id="Hgc-CO-DKE"/>
+                                            <outletCollection property="collectionViews" destination="ACr-cQ-4eo" id="UWU-uh-Xi0"/>
+                                            <outletCollection property="collectionViews" destination="0Ww-7d-khj" id="Z6j-AU-FhL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BJm-V2-EYI" id="0TE-sc-yyv"/>
+                                    <outlet property="delegate" destination="BJm-V2-EYI" id="Vne-uh-O8o"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="M9E-qO-bg2" userLabel="Navigation View">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="left" image="toolbar-background.png" id="K0d-k5-v5f">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rwM-yr-e3n">
+                                        <rect key="frame" x="234" y="3" width="300" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Hymnal Store">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="hymnTitleButtonTouched" destination="2" eventType="touchUpInside" id="bxq-0J-lqO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="57v-w7-Bkj">
+                                        <rect key="frame" x="8" y="2" width="68" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="button-library.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LibraryButtonTouched" destination="BJm-V2-EYI" eventType="touchUpInside" id="dYi-MB-MoH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="WK9-sW-QZS" id="Ada-0u-a5a"/>
+                        <outlet property="storeTableView" destination="ukF-9q-uZ3" id="Xxp-QN-Vpp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMR-Tm-JGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-portrait.png" width="768" height="1024"/>
+        <image name="button-annotate-off.png" width="20" height="23"/>
+        <image name="button-home.png" width="23" height="23"/>
+        <image name="button-hymnals.png" width="27" height="17"/>
+        <image name="button-large.png" width="190" height="34"/>
+        <image name="button-library.png" width="68" height="29"/>
+        <image name="button-listen-off.png" width="25" height="20"/>
+        <image name="button-search.png" width="21" height="23"/>
+        <image name="button-servicelists.png" width="18" height="22"/>
+        <image name="button-store.png" width="28" height="21"/>
+        <image name="help-add.png" width="140" height="120"/>
+        <image name="help-close.png" width="151" height="80"/>
+        <image name="help-dial.png" width="141" height="202"/>
+        <image name="help-fullscreen.png" width="586" height="26"/>
+        <image name="help-help.png" width="57" height="52"/>
+        <image name="help-home.png" width="132" height="198"/>
+        <image name="help-hymnals.png" width="210" height="111"/>
+        <image name="help-left.png" width="172" height="159"/>
+        <image name="help-listen.png" width="148" height="82"/>
+        <image name="help-middle.png" width="253" height="107"/>
+        <image name="help-right.png" width="171" height="159"/>
+        <image name="help-search.png" width="151" height="202"/>
+        <image name="help-servicelists.png" width="148" height="142"/>
+        <image name="help-support.png" width="149" height="37"/>
+        <image name="help-top.png" width="453" height="32"/>
+        <image name="logo-getsatisfaction.png" width="130" height="30"/>
+        <image name="toolbar-background.png" width="1024" height="44"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

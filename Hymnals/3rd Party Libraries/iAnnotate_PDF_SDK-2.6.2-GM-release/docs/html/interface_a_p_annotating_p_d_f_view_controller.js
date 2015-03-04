@@ -1,0 +1,25 @@
+var interface_a_p_annotating_p_d_f_view_controller =
+[
+    [ "activeAnnotation", "interface_a_p_annotating_p_d_f_view_controller.html#af75d1d1f5b19f4d77cee7df1fb43c707", null ],
+    [ "addAnnotationOfType:", "interface_a_p_annotating_p_d_f_view_controller.html#a194cde15380da854700dc19747e49c9c", null ],
+    [ "addAnnotationOfType:atViewLocation:", "interface_a_p_annotating_p_d_f_view_controller.html#a8f4986362c3ed1cc9547e0716cb95894", null ],
+    [ "cancelAddAnnotation", "interface_a_p_annotating_p_d_f_view_controller.html#a90d235269770751b8d9f552059e443f3", null ],
+    [ "canRedoInkOperation", "interface_a_p_annotating_p_d_f_view_controller.html#afde767b65673e6d42217a66d155052f2", null ],
+    [ "canUndoInkOperation", "interface_a_p_annotating_p_d_f_view_controller.html#a437db6f109ce51d2b5f89c216ad7b94c", null ],
+    [ "clearActiveAnnotation", "interface_a_p_annotating_p_d_f_view_controller.html#a64c55d2c6772225401029296abc9f00b", null ],
+    [ "editActiveAnnotation", "interface_a_p_annotating_p_d_f_view_controller.html#a2a30bb64a9a2dcf4a6b59eb2dd2ea710", null ],
+    [ "finishCurrentAnnotation", "interface_a_p_annotating_p_d_f_view_controller.html#ab2197dbd8928afd2f7555200301aad8e", null ],
+    [ "isInInkDrawingMode", "interface_a_p_annotating_p_d_f_view_controller.html#a96d9f717f87d90766c4fafab488eaf0d", null ],
+    [ "redoInkOperation", "interface_a_p_annotating_p_d_f_view_controller.html#a6e5a4b43429ed85561d63f60c9ceb79d", null ],
+    [ "removeAllAnnotations", "interface_a_p_annotating_p_d_f_view_controller.html#a029859fbfe71f50cf2bbfb9483cd98ae", null ],
+    [ "removeAnnotationsOnPage:", "interface_a_p_annotating_p_d_f_view_controller.html#abe2d4de78f4342e01f01fe8e92436b69", null ],
+    [ "selectedAnnotationText", "interface_a_p_annotating_p_d_f_view_controller.html#a121ba38e13de60efdc4dbef63ac91e5c", null ],
+    [ "setInkDrawingMode", "interface_a_p_annotating_p_d_f_view_controller.html#a2ed034b3c840671d9004855eb0db0c0d", null ],
+    [ "setInkEraserMode", "interface_a_p_annotating_p_d_f_view_controller.html#aff9237982b0f6668d238a41507ceda4e", null ],
+    [ "transformActiveAnnotation", "interface_a_p_annotating_p_d_f_view_controller.html#a0621a4a5d2242350f79de84f04a08577", null ],
+    [ "undoInkOperation", "interface_a_p_annotating_p_d_f_view_controller.html#abfdb95f7f085a644238a17236aef6216", null ],
+    [ "updateActiveAnnotation:", "interface_a_p_annotating_p_d_f_view_controller.html#a7aa28ba47e9d5c2a7c22fba21fe6fde6", null ],
+    [ "annotationAuthor", "interface_a_p_annotating_p_d_f_view_controller.html#ae485ba3770bc7169e7199b871cd15d48", null ],
+    [ "delegate", "interface_a_p_annotating_p_d_f_view_controller.html#a16264bb74ff7692fc4b5d462dbf715cc", null ],
+    [ "disableNoncontiguousMarkup", "interface_a_p_annotating_p_d_f_view_controller.html#a7a24a0d3f65ca6e03fb679c482e63285", null ]
+];
